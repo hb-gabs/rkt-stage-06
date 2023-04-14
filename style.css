@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: #C4C4CC;
+    transition: 200ms;
+}
+
+a.selected {
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    height: 8rem;
+    gap: 3rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+#root {
+    padding: 8rem;
+    height: calc(100vh - 8rem);
+
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+
+#home h1 {
+    font-size: 4rem;
+}
+
+#home button {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px solid white;
+    padding: 1.5rem 2.5rem;
+    border-radius: .5rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#home button:hover {
+    background-color: white;
+    color: #02799D;
+}
+
+#exploring h1, #universe h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+#exploring p, #universe p {
+    font-size: 1.5rem;
+    text-align: left;
+    width: 60rem;
+    line-height: 2.5rem;
+}
